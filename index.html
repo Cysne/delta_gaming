@@ -1,132 +1,444 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous">
-        <link href="./assets/css/normalize.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Deltatech
-        </title>
-        <link
-            rel="stylesheet"
-            href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
-    </head>
-    <body class="app">
-        <header class="cabecalho">
-            <a href="#" class="cabecalho__logo">
-                <img class="mt-2" src="./assets/img/logo.png" alt="Logo"
-                    width="75" height="75" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./assets/css/normalize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsivo.css" />
+  <link rel="stylesheet" href="./assets/css/destaque.css"/>
+  <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+
+  <link rel="stylesheet" href="./assets/css/jogos__populares.css" />
+  <title>Deltatech
+  </title>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+</head>
+
+<body class="app">
+  <header class="cabecalho">
+    <a href="#" class="cabecalho__logo">
+      <img class="mt-2" src="./assets/img/logo.png" alt="Logo" width="75" height="75" />
+    </a>
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li class="menu__item">
+          <a class="menu__link ativo" href="#">
+            <i class="fas fa-home"></i>
+            Início
+          </a>
+          <a class="menu__link" href="#">
+            <i class="fas fa-mobile-alt"></i>
+            Aplicativos</a>
+          <a class="menu__link" href="#">
+            <i class="bi bi-controller"></i>
+            Jogos
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="conteudo">
+    <section class="destaques">
+      <div id="carouselDestaques" class="carousel slide destaques__principal caixa" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div style="display: grid;">
+              <div style="grid-column: 1 / 4; grid-row: 1 / 3;">
+                <img src="./assets/img/rpg/diabloiv.jpg" alt="Dragons Dogma" style="width: 100%; max-height: 531px; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jogos em Promoção</h5>
+              <p>Descrição do Jogo 1.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/seu-jogo-2.jpg" class="d-block w-100" alt="Jogo 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jogos em Promoção</h5>
+              <p>Descrição do Jogo 2.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+      <div class="destaques__secundario caixa">
+        <h3 class="destaques__titulo">Item 2</h3>
+      </div>
+      <div class="destaques__secundario caixa">
+        <h3 class="destaques__titulo">Item 3</h3>
+      </div>
+      <div class="destaques__secundario caixa">
+        <h3 class="destaques__titulo">Item 4</h3>
+      </div>
+      <div class="destaques__secundario caixa">
+        <h3 class="destaques__titulo">Item 5</h3>
+      </div>
+      <div class="destaques__categorias">
+        <ul class="destaques__categorias___lista">
+          <li class="destaques__categorias___item">
+            <a class="destaques__categorias___link" href="#">
+              <i class="destaques__categorias___icone fab fa-buromobelexperte"></i>
+              Aplicativos populares
             </a>
-            <nav class="menu">
-                <ul class="menu__lista">
-                    <li class="menu__item">
-                        <a class="menu__link ativo" href="#">
-                            <i class="fas fa-home"></i>
-                            Início
-                        </a>
-                        <a class="menu__link" href="#">
-                            <i class="fas fa-mobile-alt"></i>
-                            Aplicativos</a>
-                        <a class="menu__link" href="#">
-                            <i class="bi bi-controller"></i>
-                            Jogos
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="conteudo">
-            <section class="destaques">
-                <div id="carouselDestaques"
-                    class="carousel slide destaques__principal caixa"
-                    data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/img/seu-jogo-1.jpg"
-                                class="d-block w-100" alt="Jogo 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Jogos em Promoção</h5>
-                                <p>Descrição do Jogo 1.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/seu-jogo-2.jpg"
-                                class="d-block w-100" alt="Jogo 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Jogos em Promoção</h5>
-                                <p>Descrição do Jogo 2.</p>
-                            </div>
-                        </div>
-                        <!-- Adicione mais itens aqui -->
-                    </div>
-                    <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselDestaques"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"
-                            aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselDestaques"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"
-                            aria-hidden="true"></span>
-                        <span class="visually-hidden">Próximo</span>
-                    </button>
+          </li>
+          <li class="destaques__categorias___item">
+            <a class="destaques__categorias___link" href="#">
+              <i class="fas fa-list-ol"></i>
+              Jogos populares
+            </a>
+          </li>
+          <li class="destaques__categorias___item">
+            <a class="destaques__categorias___link" href="#">
+              <i class="far fa-star"></i>
+              Em Destaque
+            </a>
+          </li>
+          <li class="destaques__categorias___item">
+            <a class="destaques__categorias___link" href="#">
+              <i class="far fa-bell"></i>
+              Lançamentos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="populares">
+      <div class="populares__itens">
+        <div class="populares__info">
+          <div class="populares__cabecalho">
+            <h4 class="populares__titulo">
+              <i class="populares__icone fab fa-buromobelexperte"></i>
+              Proximos lançamentos
+            </h4>
+            <button class="populares__botao">
+              <i class="fas fa-th"></i>
+              Visualizar todos
+            </button>
+          </div>
+          <div class="populares__conteudo">
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/lancamentos/lifestrange.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Life Is Strange</h5>
+                  <time class="populares__card___data" datetime="2013-08-01">08/2013</time>
                 </div>
-                <div class="destaques__secundario caixa">
-                    <h3 class="destaques__titulo">Item 2</h3>
+                <div class="populares__card___descricao">
+                  Max percebe que a pessoa responsável pelo crime pretende agir novamente nas duas realidades. Será que a Max consegue usar os novos poderes dela de alternar entre linhas do tempo para desvendar o mistério e impedir o assassinato?</div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/lancamentos/Assassins-Creed-Shadows-912x569.jpg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Assassin's Creed Shadows</h5>
+                  <time class="populares__card___data" datetime="20090-01-01">2009</time>
                 </div>
-                <div class="destaques__secundario caixa">
-                    <h3 class="destaques__titulo">Item 3</h3>
+                <div class="populares__card___descricao">
+                  Torne-se uma assassina shinobi letal e um poderoso samurai lendário enquanto explora um mundo aberto maravilhoso em tempos caóticos. Jogue com dois aliados improváveis enquanto desvenda uma história em comum e traga uma nova era ao Japão. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/lancamentos/south.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">South of Midnight</h5>
+                  <time class="populares__card___data" datetime="2013-08-14">14/08/2013</time>
                 </div>
-                <div class="destaques__secundario caixa">
-                    <h3 class="destaques__titulo">Item 4</h3>
+                <div class="populares__card___descricao">
+                  South of Midnight é uma nova ação e aventura da Compulsion Games. Explore os mitos e enfrente criaturas misteriosas do Extremo Sul neste conto popular moderno enquanto aprende a tecer um poder antigo para superar obstáculos e enfrentar o sofrimento que assombra sua cidade natal.</div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/lancamentos/star-wars-outlaws-key-art-articl.avif">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Star Wars: Outlaws</h5>
+                  <time class="populares__card___data" datetime="2011-01-01">2011</time>
                 </div>
-                <div class="destaques__secundario caixa">
-                    <h3 class="destaques__titulo">Item 5</h3>
+                <div class="populares__card___descricao">
+                  Aceite missões arriscadas e vantajosas dos sindicatos do crime galácticos. Como uma das mais procuradas da galáxia, roube bens valiosos, infiltre-se em locais secretos e engane inimigos. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/lancamentos/GTA-6.jpg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">GTA VI</h5>
+                  <time class="populares__card___data" datetime="2003-08-01">08/2003</time>
                 </div>
-                <div class="destaques__categorias">
-                    <ul class="destaques__categorias___lista">
-                        <li class="destaques__categorias___item">
-                            <a class="destaques__categorias___link" href="#">
-                                <i
-                                    class="destaques__categorias___icone fab fa-buromobelexperte"></i>
-                                Aplicativos populares
-                            </a>
-                        </li>
-                        <li class="destaques__categorias___item">
-                            <a class="destaques__categorias___link" href="#">
-                                <i class="fas fa-list-ol"></i>
-                                Jogos populares
-                            </a>
-                        </li>
-                        <li class="destaques__categorias___item">
-                            <a class="destaques__categorias___link" href="#">
-                                <i class="far fa-star"></i>
-                                Em Destaque
-                            </a>
-                        </li>
-                        <li class="destaques__categorias___item">
-                            <a class="destaques__categorias___link" href="#">
-                                <i class="far fa-bell"></i>
-                                Lançamentos
-                            </a>
-                        </li>
-                    </ul><!-- -->
+                <div class="populares__card___descricao">
+                  GTA 6 será ambientado em Leonida, um estado da cidade fictícia de Vice City -— que retorna a aparecer na franquia após 18 anos desde sua última aparição em GTA: Vice City Stories, prelúdio do clássico GTA: Vice City.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="populares__itens">
+        <div class="populares__info">
+          <div class="populares__cabecalho">
+            <h4 class="populares__titulo">
+              <i class="populares__icone fab fa-buromobelexperte"></i>
+              Jogos de Ação
+            </h4>
+            <button class="populares__botao">
+              <i class="fas fa-th"></i>
+              Visualizar todos
+            </button>
+          </div>
+          <div class="populares__conteudo">
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/cyberpunk.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Cyberpunk</h5>
+                  <time class="populares__card___data" datetime="2013-08-01">08/2013</time>
                 </div>
-            </section>
-            
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-            <script src="./assets/js/fontawesome.all.min.js"></script>
-    </body>
+                <div class="populares__card___descricao">
+                  Cyberpunk 2077 é uma história de aventura e ação de mundo aberto ambientada em Night City, uma
+                  megalópole obcecada por poder, glamour e modificações corporais. Jogue como V, um mercenário
+                  cyberpunk, e enfrente as forças mais poderosas da cidade numa luta por glória e sobrevivência. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/baldursgate3.avif">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Baldurs Gate III</h5>
+                  <time class="populares__card___data" datetime="20090-01-01">2009</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Baldur's Gate 3 é um RPG expansivo que oferece várias possibilidades para cada jogador progredir na
+                  sua história. Ao jogar, você irá perceber que, em apenas uma missão, é possível encontrar dezenas de
+                  opções diferentes que mudam o rumo não só da missão, mas também de toda a história. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/dragons_dogma.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Dragon's Dogma II</h5>
+                  <time class="populares__card___data" datetime="2013-08-14">14/08/2013</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Dragon's Dogma 2 é um jogo de RPG em mundo aberto onde assumimos — acredite se quiser — o papel do
+                  Escolhido, o ser destemido e destinado a matar o dragão ou morrer tentando, acompanhando de seu grupo
+                  de companheiros — conhecidos como peões. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/destaques/starfield.webp">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Starfield</h5>
+                  <time class="populares__card___data" datetime="2011-01-01">2011</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Crie qualquer personagem que quiser e explorar com liberdade inigualável ao embarcar em uma jornada
+                  épica para responder ao maior mistério da humanidade. No ano de 2330, a humanidade se aventurou além
+                  do nosso sistema solar, colonizando novos planetas e vivendo como exploradores do espaço. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/diabloiv.jpg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Diablo iv</h5>
+                  <time class="populares__card___data" datetime="2003-08-01">08/2003</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Situado no mundo de Santuário, Diablo IV se passa logo após Diablo III: Reaper of Souls. Cultistas
+                  invocaram a principal antagonista e filha de Mephisto, Lilith. Depois dos eventos dos jogos
+                  anteriores, as forças de anjos e demônios se esgotaram, abrindo uma chance para que ela estabeleça seu
+                  poder sobre Santuário. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="populares__itens">
+        <div class="populares__info">
+          <div class="populares__cabecalho">
+            <h4 class="populares__titulo">
+              <i class="populares__icone fab fa-buromobelexperte"></i>
+                Jogos de Aventura
+            </h4>
+            <button class="populares__botao">
+              <i class="fas fa-th"></i>
+              Visualizar todos
+            </button>
+          </div>
+          <div class="populares__conteudo">
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/cyberpunk.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Cyberpunk</h5>
+                  <time class="populares__card___data" datetime="2013-08-01">08/2013</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Cyberpunk 2077 é uma história de aventura e ação de mundo aberto ambientada em Night City, uma
+                  megalópole obcecada por poder, glamour e modificações corporais. Jogue como V, um mercenário
+                  cyberpunk, e enfrente as forças mais poderosas da cidade numa luta por glória e sobrevivência. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/baldursgate3.avif">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Baldurs Gate III</h5>
+                  <time class="populares__card___data" datetime="20090-01-01">2009</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Baldur's Gate 3 é um RPG expansivo que oferece várias possibilidades para cada jogador progredir na
+                  sua história. Ao jogar, você irá perceber que, em apenas uma missão, é possível encontrar dezenas de
+                  opções diferentes que mudam o rumo não só da missão, mas também de toda a história. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/dragons_dogma.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Dragon's Dogma II</h5>
+                  <time class="populares__card___data" datetime="2013-08-14">14/08/2013</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Dragon's Dogma 2 é um jogo de RPG em mundo aberto onde assumimos — acredite se quiser — o papel do
+                  Escolhido, o ser destemido e destinado a matar o dragão ou morrer tentando, acompanhando de seu grupo
+                  de companheiros — conhecidos como peões. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/destaques/starfield.webp">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Starfield</h5>
+                  <time class="populares__card___data" datetime="2011-01-01">2011</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Crie qualquer personagem que quiser e explorar com liberdade inigualável ao embarcar em uma jornada
+                  épica para responder ao maior mistério da humanidade. No ano de 2330, a humanidade se aventurou além
+                  do nosso sistema solar, colonizando novos planetas e vivendo como exploradores do espaço. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/diabloiv.jpg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Diablo iv</h5>
+                  <time class="populares__card___data" datetime="2003-08-01">08/2003</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Situado no mundo de Santuário, Diablo IV se passa logo após Diablo III: Reaper of Souls. Cultistas
+                  invocaram a principal antagonista e filha de Mephisto, Lilith. Depois dos eventos dos jogos
+                  anteriores, as forças de anjos e demônios se esgotaram, abrindo uma chance para que ela estabeleça seu
+                  poder sobre Santuário. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="populares__itens">
+          <div class="populares__info">
+            <div class="populares__cabecalho">
+              <h4 class="populares__titulo">
+                <i class="populares__icone fab fa-buromobelexperte"></i>
+                Rpgs mais populares
+              </h4>
+              <button class="populares__botao">
+                <i class="fas fa-th"></i>
+                Visualizar todos
+              </button>
+            </div>
+          </div>
+          <div class="populares__conteudo">
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/cyberpunk.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Cyberpunk</h5>
+                  <time class="populares__card___data" datetime="2013-08-01">08/2013</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Cyberpunk 2077 é uma história de aventura e ação de mundo aberto ambientada em Night City, uma
+                  megalópole obcecada por poder, glamour e modificações corporais. Jogue como V, um mercenário
+                  cyberpunk, e enfrente as forças mais poderosas da cidade numa luta por glória e sobrevivência. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/baldursgate3.avif">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Baldurs Gate III</h5>
+                  <time class="populares__card___data" datetime="20090-01-01">2009</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Baldur's Gate 3 é um RPG expansivo que oferece várias possibilidades para cada jogador progredir na
+                  sua história. Ao jogar, você irá perceber que, em apenas uma missão, é possível encontrar dezenas de
+                  opções diferentes que mudam o rumo não só da missão, mas também de toda a história. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/dragons_dogma.jpeg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Dragon's Dogma II</h5>
+                  <time class="populares__card___data" datetime="2013-08-14">14/08/2013</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Dragon's Dogma 2 é um jogo de RPG em mundo aberto onde assumimos — acredite se quiser — o papel do
+                  Escolhido, o ser destemido e destinado a matar o dragão ou morrer tentando, acompanhando de seu grupo
+                  de companheiros — conhecidos como peões. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/destaques/starfield.webp">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Starfield</h5>
+                  <time class="populares__card___data" datetime="2011-01-01">2011</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Crie qualquer personagem que quiser e explorar com liberdade inigualável ao embarcar em uma jornada
+                  épica para responder ao maior mistério da humanidade. No ano de 2330, a humanidade se aventurou além
+                  do nosso sistema solar, colonizando novos planetas e vivendo como exploradores do espaço. </div>
+              </div>
+            </div>
+            <div class="populares__card">
+              <img class="populares__card___imagem" src="./assets/img/rpg/diabloiv.jpg">
+              <div class="populares__card___corpo">
+                <div class="populares__card___cabecalho">
+                  <h5 class="populares__card___titulo">Diablo iv</h5>
+                  <time class="populares__card___data" datetime="2003-08-01">08/2003</time>
+                </div>
+                <div class="populares__card___descricao">
+                  Situado no mundo de Santuário, Diablo IV se passa logo após Diablo III: Reaper of Souls. Cultistas
+                  invocaram a principal antagonista e filha de Mephisto, Lilith. Depois dos eventos dos jogos
+                  anteriores, as forças de anjos e demônios se esgotaram, abrindo uma chance para que ela estabeleça seu
+                  poder sobre Santuário. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/fontawesome.all.min.js"></script>
+</body>
+
 </html>

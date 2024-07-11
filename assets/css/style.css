@@ -92,24 +92,26 @@
 }
 
 .destaques__secundario:nth-child(2) {
-  background: url("../img/call-of-duty.webp") center / cover no-repeat;
+  background: url("../img/destaques/call-of-duty.webp") center / cover no-repeat;
   grid-row: 1 /1;
   grid-column: 4 / 4;
 }
 .destaques__secundario:nth-child(3) {
-  background: url("../img/eldenring.jpeg") center / cover no-repeat;
+  background: url("../img/destaques/dragons_dogma.jpeg") center / cover
+    no-repeat;
   grid-column: 4 / 4;
   grid-row: 2/2;
 }
 
 .destaques__secundario:nth-child(4) {
-  background: url("../img/dragons_dogma.jpeg") center / cover no-repeat;
+  background: url("../img/destaques/eldenring.jpeg") center / cover no-repeat;
   grid-column: 4/4;
   grid-row: 3/3;
 }
 
 .destaques__secundario:nth-child(5) {
-  background: url("../img/Hogwarts\ Legacy.png") center / cover no-repeat;
+  background: url("../img/destaques/HogwartsLegacy.png") center / cover
+    no-repeat;
   grid-column: 3/3;
   grid-row: 3/3;
 }
@@ -137,4 +139,34 @@
 
 .destaques__categorias___link {
   color: inherit;
+}
+
+.app {
+  background: #f1f1f1;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-areas: "cabecalho" "conteudo" "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto auto;
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  grid-area: cabecalho;
+  padding: 0 2rem;
+}
+
+.conteudo {
+  grid-area: conteudo;
+  padding: 0 2rem;
+}
+
+.rodape {
+  background: #fdfdfd;
+  color: #333333;
+  grid-area: rodape;
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
 }
