@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Deltatech
+        </title>
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    </head>
+    <body class="app">
+        <header class="cabecalho">
+            <a href="#" class="cabecalho__logo">
+                <img class="mt-2" src="./assets/img/logo.png" alt="Logo"
+                    width="75" height="75" />
+            </a>
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item">
+                        <a class="menu__link ativo" href="#">
+                            <i class="fas fa-home"></i>
+                            Início
+                        </a>
+                        <a class="menu__link" href="#">
+                            <i class="fas fa-mobile-alt"></i>
+                            Aplicativos</a>
+                        <a class="menu__link" href="#">
+                            <i class="bi bi-controller"></i>
+                            Jogos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="conteudo">
+            <section class="destaques">
+                <div id="carouselDestaques"
+                    class="carousel slide destaques__principal caixa"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/seu-jogo-1.jpg"
+                                class="d-block w-100" alt="Jogo 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Jogos em Promoção</h5>
+                                <p>Descrição do Jogo 1.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/seu-jogo-2.jpg"
+                                class="d-block w-100" alt="Jogo 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Jogos em Promoção</h5>
+                                <p>Descrição do Jogo 2.</p>
+                            </div>
+                        </div>
+                        <!-- Adicione mais itens aqui -->
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselDestaques"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselDestaques"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+                <div class="destaques__secundario caixa">
+                    <h3 class="destaques__titulo">Item 2</h3>
+                </div>
+                <div class="destaques__secundario caixa">
+                    <h3 class="destaques__titulo">Item 3</h3>
+                </div>
+                <div class="destaques__secundario caixa">
+                    <h3 class="destaques__titulo">Item 4</h3>
+                </div>
+                <div class="destaques__secundario caixa">
+                    <h3 class="destaques__titulo">Item 5</h3>
+                </div>
+                <div class="destaques__categorias">
+                    <ul class="destaques__categorias___lista">
+                        <li class="destaques__categorias___item">
+                            <a class="destaques__categorias___link" href="#">
+                                <i
+                                    class="destaques__categorias___icone fab fa-buromobelexperte"></i>
+                                Aplicativos populares
+                            </a>
+                        </li>
+                        <li class="destaques__categorias___item">
+                            <a class="destaques__categorias___link" href="#">
+                                <i class="fas fa-list-ol"></i>
+                                Jogos populares
+                            </a>
+                        </li>
+                        <li class="destaques__categorias___item">
+                            <a class="destaques__categorias___link" href="#">
+                                <i class="far fa-star"></i>
+                                Em Destaque
+                            </a>
+                        </li>
+                        <li class="destaques__categorias___item">
+                            <a class="destaques__categorias___link" href="#">
+                                <i class="far fa-bell"></i>
+                                Lançamentos
+                            </a>
+                        </li>
+                    </ul><!-- -->
+                </div>
+            </section>
+            
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script src="./assets/js/fontawesome.all.min.js"></script>
+    </body>
+</html>
