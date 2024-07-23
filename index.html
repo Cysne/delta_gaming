@@ -13,6 +13,7 @@
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <title>Delta Gaming | Baixe nossos aplicativos e jogos</title>
     <link href="./assets/css/normalize.css" rel="stylesheet" />
+    <link href="./assets/js/index.js" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
     <link href="./assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/destaque.css" />
@@ -66,7 +67,7 @@
                     alt="Diablo"
                     style="
                       width: 100%;
-                      max-height: 549px;
+                      max-height: 555px;
                       object-fit: cover;
                       object-position: center;
                     "
@@ -75,7 +76,10 @@
               </div>
               <div class="carousel-caption d-none d-md-block">
                 <h5>Jogos em Promoção</h5>
-                <p>Até 50% de desconto</p>
+                <p>
+                  Com até 50% de desconto, Diablo IV é um jogo de RPG de ação e
+                  aventura.
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -86,7 +90,7 @@
                     alt="Baldurs Gate III"
                     style="
                       width: 100%;
-                      max-height: 549px;
+                      max-height: 555px;
                       object-fit: cover;
                       object-position: center;
                     "
@@ -95,7 +99,33 @@
               </div>
               <div class="carousel-caption d-none d-md-block">
                 <h5>Jogos em Promoção</h5>
-                <p>Até 50% de desconto</p>
+                <p>
+                  Com até 50% de desconto, Baldurs Gate III é um jogo de RPG com
+                  elementos para um jogador e multijogador.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="display: grid">
+                <div style="grid-column: 1 / 4; grid-row: 1 / 3">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="Baldurs Gate III"
+                    style="
+                      width: 100%;
+                      max-height: 555px;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                  />
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Delta Gaming</h5>
+                <p>
+                  Delta Gaming é uma plataforma de jogos e aplicativos para você
+                  se divertir e economizar.
+                </p>
               </div>
             </div>
           </div>
@@ -119,16 +149,16 @@
           </button>
         </div>
         <div class="destaques__secundario caixa">
-          <h3 class="destaques__titulo">Call of Duty: Black Ops 6</h3>
+          <h3 class="destaques__titulo">Item 2</h3>
         </div>
         <div class="destaques__secundario caixa">
-          <h3 class="destaques__titulo">Dragons Dogma II</h3>
+          <h3 class="destaques__titulo">Item 3</h3>
         </div>
         <div class="destaques__secundario caixa">
-          <h3 class="destaques__titulo">Elden Ring Shadow Of The Erdtree</h3>
+          <h3 class="destaques__titulo">Item 4</h3>
         </div>
         <div class="destaques__secundario caixa">
-          <h3 class="destaques__titulo">Hogwarts legacy</h3>
+          <h3 class="destaques__titulo">Item 5</h3>
         </div>
         <div class="destaques__categorias">
           <ul class="destaques__categorias___lista">
@@ -137,13 +167,16 @@
                 <i
                   class="destaques__categorias___icone fab fa-buromobelexperte"
                 ></i>
-                RPGs
+                Jogos populares
               </a>
             </li>
             <li class="destaques__categorias___item">
-              <a class="destaques__categorias___link" href="#">
-                <i class="fas fa-list-ol"></i>
-                Jogos populares
+              <a
+                class="destaques__categorias___link"
+                id="linkSaibaMais"
+                href="#"
+              >
+                <i class="fa fa-plus"></i> Saiba Mais
               </a>
             </li>
             <li class="destaques__categorias___item">
@@ -153,9 +186,12 @@
               </a>
             </li>
             <li class="destaques__categorias___item">
-              <a class="destaques__categorias___link" href="#">
-                <i class="far fa-bell"></i>
-                Lançamentos
+              <a
+                class="destaques__categorias___link"
+                id="linkContato"
+                href="./contato.html"
+              >
+                <i class="fa fa-address-card"></i> Entre em Contato
               </a>
             </li>
           </ul>
@@ -167,7 +203,7 @@
             <div class="populares__cabecalho">
               <h4 class="populares__titulo">
                 <i class="populares__icone fab fa-buromobelexperte"></i>
-                Proximos Lançamentos
+                Jogos populares
               </h4>
               <button class="populares__botao">
                 <i class="fas fa-th"></i>
@@ -184,101 +220,99 @@
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
                   <h5 class="populares__card___titulo">Life I Strange</h5>
-                  <time
-                    class="populares__card___data"
-                    datetime="2013-08-01"
-                  ></time>
+                  <time class="populares__card___data" datetime="2013-08-01"
+                    >08/2013</time
+                  >
                 </div>
                 <div class="populares__card___descricao">
-                  CORRIDA CONTRA O TEMPO. Um detetive incansável decidiu ficar
-                  de olho na Max, mas quem realmente assassinou a Safi se
-                  aproxima a cada nova pista descoberta. Será que a Max consegue
-                  sobreviver tempo suficiente para tornar possível o impossível?
+                  Max percebe que a pessoa responsável pelo crime pretende agir
+                  novamente nas duas realidades. Será que a Max consegue usar os
+                  novos poderes dela de alternar entre linhas do tempo para
+                  desvendar o mistério e impedir o assassinato?
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/lancamentos/Assassins-Creed-Shadows-912x569.jpg"
+                src="./assets/img/destaques/batman.webp"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">
-                    Assassins Creed Shadows
-                  </h5>
-                  <time
-                    class="populares__card___data"
-                    datetime="20090-01-01"
-                  ></time>
+                  <h5 class="populares__card___titulo">Batman</h5>
+                  <time class="populares__card___data" datetime="20090-01-01"
+                    >2009</time
+                  >
                 </div>
                 <div class="populares__card___descricao">
-                  Torne-se uma assassina shinobi letal e um poderoso samurai
-                  lendário enquanto explora um mundo aberto maravilhoso em
-                  tempos caóticos. Jogue com dois aliados improváveis enquanto
-                  desvenda uma história em comum e traga uma nova era ao Japão.
+                  Entre nas sombras do mundo aberto de Batman: Arkham City, o
+                  novo “lar” de segurança máxima para bandidos, gangsters e
+                  gênios do crime insanos. Em Batman: Arkham Knight, percorra as
+                  ruas de Gotham e enfrente a ameaça suprema na conclusão épica
+                  da trilogia.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/lancamentos/dragonage.webp"
+                src="./assets/img/destaques/1325553.jpg"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Dragon Age</h5>
+                  <h5 class="populares__card___titulo">Baldurs Gate III</h5>
                   <time class="populares__card___data" datetime="2013-08-14"
                     >14/08/2013</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Entre no mundo de Thedas, uma terra vibrante e repleta de
-                  florestas selvagens, labirintos traiçoeiros e cidades
-                  cintilantes, com combate brutal e magias secretas. Agora, uma
-                  dupla de divindades antigas corruptas escapou de séculos na
-                  escuridão e está determinada a destruir o mundo.
+                  Baldur's Gate III é um jogo eletrônico de RPG com elementos
+                  para um jogador e multijogador. Jogadores podem criar um ou
+                  mais personagens e formar um grupo ao lado de uma variedade de
+                  personagens já criados para explorar o enredo do jogo.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/lancamentos/south.jpeg"
+                src="./assets/img/destaques/eldenring.jpeg"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">South of Midnight</h5>
+                  <h5 class="populares__card___titulo">Elden Ring</h5>
                   <time class="populares__card___data" datetime="2011-01-01"
                     >2011</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  South of Midnight é uma nova ação e aventura da Compulsion
-                  Games. Explore os mitos e enfrente criaturas misteriosas do
-                  Extremo Sul neste conto popular moderno enquanto aprende a
-                  tecer um poder antigo para superar obstáculos e enfrentar o
-                  sofrimento que assombra sua cidade natal.
+                  Elden Ring é ambientado em um mundo de fantasia de larga
+                  escala, conhecido como The Lands Between. O jogador assume o
+                  papel de um personagem que é conhecido como o "Lorde da
+                  Ceniza", que é encarregado de encontrar e destruir as fontes
+                  do poder mágico que sustentam o mundo.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/lancamentos/GTA-6.jpg"
+                src="./assets/img/destaques/fifa-22-768x960.webp"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">GTA VI</h5>
+                  <h5 class="populares__card___titulo">FIFA</h5>
                   <time class="populares__card___data" datetime="2003-08-01"
                     >08/2003</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  GTA 6 será ambientado em Leonida, um estado da cidade fictícia
-                  de Vice City -— que retorna a aparecer na franquia após 18
-                  anos desde sua última aparição em GTA: Vice City Stories,
-                  prelúdio do clássico GTA: Vice City.
+                  O FUT 22 redesenha o Division Rivals e o FUT Champions para
+                  criar uma maneira mais acessível de testar suas habilidades e
+                  seu progresso contra outras pessoas, oferece ainda mais
+                  maneiras para deixar o seu clube com a sua cara, com novas
+                  opções de personalização dentro e fora do campo, e apresenta
+                  os Heróis do FUT
                 </div>
               </div>
             </div>
@@ -288,8 +322,8 @@
           <div class="populares__info">
             <div class="populares__cabecalho">
               <h4 class="populares__titulo">
-                <i class="populares__icone fas fa-list-ol"></i>
-                Jogos populares
+                <i class="populares__icone far fa-star"></i>
+                RPG
               </h4>
               <button class="populares__botao">
                 <i class="fas fa-th"></i>
@@ -301,21 +335,19 @@
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/rpg/baldursgate3.avif"
+                src="./assets/img/rpg/cyberpunk.jpeg"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Baldurs Gate III</h5>
+                  <h5 class="populares__card___titulo">Cyberpunk</h5>
                   <time class="populares__card___data" datetime="2017-07-25"
                     >25/07/2017</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Baldur's Gate 3 é um RPG expansivo que oferece várias
-                  possibilidades para cada jogador progredir na sua história. Ao
-                  jogar, você irá perceber que, em apenas uma missão, é possível
-                  encontrar dezenas de opções diferentes que mudam o rumo não só
-                  da missão, mas também de toda a história
+                  Cyberpunk 2077 é uma história de aventura e ação de mundo
+                  aberto ambientada em Night City, uma megalópole obcecada por
+                  poder, glamour e modificações corporais.
                 </div>
               </div>
             </div>
@@ -344,34 +376,13 @@
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/rpg/cyberpunk.jpeg"
-              />
-              <div class="populares__card___corpo">
-                <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Cyberpunk</h5>
-                  <time class="populares__card___data" datetime="2012-08-21"
-                    >21/08/2012</time
-                  >
-                </div>
-                <div class="populares__card___descricao">
-                  Cyberpunk 2077 é uma história de aventura e ação de mundo
-                  aberto ambientada em Night City, uma megalópole obcecada por
-                  poder, glamour e modificações corporais. Jogue como V, um
-                  mercenário cyberpunk, e enfrente as forças mais poderosas da
-                  cidade numa luta por glória e sobrevivência.
-                </div>
-              </div>
-            </div>
-            <div class="populares__card">
-              <img
-                class="populares__card___imagem"
                 src="./assets/img/rpg/dragons_dogma.jpeg"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
                   <h5 class="populares__card___titulo">Dragons Dogma II</h5>
-                  <time class="populares__card___data" datetime="2009-10-27"
-                    >27/10/2009</time
+                  <time class="populares__card___data" datetime="2013-08-01"
+                    >08/2013</time
                   >
                 </div>
                 <div class="populares__card___descricao">
@@ -386,138 +397,43 @@
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/lancamentos/star-wars-outlaws-key-art-articl.avif"
+                src="./assets/img/destaques/starfield.webp"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Star Wars: Outlaws</h5>
-                  <time class="populares__card___data" datetime="2013-09-17"
-                    >17/09/2013</time
-                  >
-                </div>
-                <div class="populares__card___descricao">
-                  Embarque em missões de alto risco Aceite missões arriscadas e
-                  vantajosas dos sindicatos do crime galácticos. Como uma das
-                  mais procuradas da galáxia, roube bens valiosos, infiltre-se
-                  em locais secretos e engane inimigos.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="populares__itens">
-          <div class="populares__info">
-            <div class="populares__cabecalho">
-              <h4 class="populares__titulo">
-                <i class="populares__icone far fa-star"></i>
-                Em Destaque
-              </h4>
-              <button class="populares__botao">
-                <i class="fas fa-th"></i>
-                Visualizar todos
-              </button>
-            </div>
-          </div>
-          <div class="populares__conteudo">
-            <div class="populares__card">
-              <img
-                class="populares__card___imagem"
-                src="./assets/img/fortnite.jpg"
-              />
-              <div class="populares__card___corpo">
-                <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Fornite</h5>
-                  <time class="populares__card___data" datetime="2017-07-25"
-                    >25/07/2017</time
-                  >
-                </div>
-                <div class="populares__card___descricao">
-                  Fortnite é um jogo eletrônico online criado em 2017,
-                  desenvolvido pela Epic Games, e lançado como diferentes
-                  pacotes de software com diferentes modos de jogo que
-                  compartilham a mesma jogabilidade e motor gráfico de jogo.
-                </div>
-              </div>
-            </div>
-            <div class="populares__card">
-              <img
-                class="populares__card___imagem"
-                src="./assets/img/pubg.jpg"
-              />
-              <div class="populares__card___corpo">
-                <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">PUBG</h5>
-                  <time class="populares__card___data" datetime="2017-03-23"
-                    >23/03/2017</time
-                  >
-                </div>
-                <div class="populares__card___descricao">
-                  PlayerUnknown's Battlegrounds, ou somente Battlegrounds, é um
-                  jogo eletrônico multiplayer desenvolvido pela PUBG Corp.,
-                  subsidiária da produtora coreana Bluehole, utilizando o motor
-                  de jogo Unreal Engine 4
-                </div>
-              </div>
-            </div>
-            <div class="populares__card">
-              <img
-                class="populares__card___imagem"
-                src="./assets/img/slack.png"
-              />
-              <div class="populares__card___corpo">
-                <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Slack</h5>
-                  <time class="populares__card___data" datetime="2013-08-01"
-                    >08/2013</time
-                  >
-                </div>
-                <div class="populares__card___descricao">
-                  Traduzido do inglês-O Slack é um conjunto baseado em nuvem de
-                  ferramentas e serviços proprietários de colaboração em equipe,
-                  fundado por Stewart Butterfield. O Slack começou como uma
-                  ferramenta interna usada por sua empresa, Tiny Speck, no
-                  desenvolvimento do Glitch, um jogo online agora extinto.
-                </div>
-              </div>
-            </div>
-            <div class="populares__card">
-              <img
-                class="populares__card___imagem"
-                src="./assets/img/whatsapp.png"
-              />
-              <div class="populares__card___corpo">
-                <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Whatsapp</h5>
+                  <h5 class="populares__card___titulo">Starfield</h5>
                   <time class="populares__card___data" datetime="20090-01-01"
                     >2009</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  WhatsApp é um aplicativo multiplataforma de mensagens
-                  instantâneas e chamadas de voz para smartphones. Além de
-                  mensagens de texto, os usuários podem enviar imagens, vídeos e
-                  documentos em PDF, além de fazer ligações grátis por meio de
-                  uma conexão com a internet.
+                  Crie qualquer personagem que quiser e explorar com liberdade
+                  inigualável ao embarcar em uma jornada épica para responder ao
+                  maior mistério da humanidade. No ano de 2330, a humanidade se
+                  aventurou além do nosso sistema solar, colonizando novos
+                  planetas e vivendo como exploradores do espaço.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/cs-go.jpg"
+                src="./assets/img/destaques/HogwartsLegacy.png"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">CS: GO</h5>
+                  <h5 class="populares__card___titulo">Hogwarts Legacy</h5>
                   <time class="populares__card___data" datetime="2012-08-21"
                     >21/08/2012</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Counter-Strike: Global Offensive é um jogo online desenvolvido
-                  pela Valve Corporation e pela Hidden Path Entertainment, sendo
-                  uma sequência de Counter-Strike: Source. É o quarto título
-                  principal da franquia.
+                  Em resumo, Hogwarts Legacy é um jogo de RPG de ação que
+                  oferece aos jogadores uma oportunidade única de explorar o
+                  mundo mágico de Harry Potter, enquanto vivenciam a vida como
+                  um estudante de Hogwarts, aprendendo novos feitiços,
+                  enfrentando desafios e interagindo com personagens icônicos do
+                  universo de Harry Potter.
                 </div>
               </div>
             </div>
@@ -540,97 +456,104 @@
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/brawl-stars.jpg"
+                src="./assets/img/lancamentos/Assassins-Creed-Shadows-912x569.jpg"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Brawl Stars</h5>
+                  <h5 class="populares__card___titulo">
+                    Assassins Creed Shadows
+                  </h5>
                   <time class="populares__card___data" datetime="2017-06-15"
                     >15/06/2017</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Traduzido do inglês-Brawl Stars é um jogo multiplayer de arena
-                  e jogos de luta livre, desenvolvido e publicado pela
-                  Supercell. Em 14 de junho de 2017, a Supercell anunciou o jogo
-                  por meio de um vídeo de transmissão ao vivo no YouTube.
+                  Torne-se uma assassina shinobi letal e um poderoso samurai
+                  lendário enquanto explora um mundo aberto maravilhoso em
+                  tempos caóticos. Jogue com dois aliados improváveis enquanto
+                  desvenda uma história em comum e traga uma nova era ao Japão.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/organizze.jpeg"
+                src="./assets/img/lancamentos/dragonage.webp"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Organizze</h5>
+                  <h5 class="populares__card___titulo">
+                    DRAGON AGE™: THE VEILGUARD
+                  </h5>
                   <time class="populares__card___data" datetime
                     >Não definida</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Usado por mais de 1 milhão de pessoas, o Organizze é uma
-                  ferramenta online que vai facilitar sua vida financeira.
+                  Entre no mundo de Thedas, uma terra vibrante e repleta de
+                  florestas selvagens, labirintos traiçoeiros e cidades
+                  cintilantes, com combate brutal e magias secretas.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/onefotball.jpeg"
+                src="./assets/img/lancamentos/GTA-6.jpg"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Onefootball</h5>
+                  <h5 class="populares__card___titulo">GTA IV</h5>
                   <time class="populares__card___data" datetime="2008-01-01"
                     >2008</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Onefootball é a melhor plataforma para os fãs de futebol de
-                  todo o mundo. Das notícias às pontuações e estatísticas -
-                  Contamos as histórias de futebol do mundo, trazidas a você por
-                  mais de 150 entusiastas do coração de Berlim!
+                  O jogo acompanha uma dupla criminosa: Lucia, a primeira
+                  protagonista feminina da franquia desde 2000, e seu parceiro;
+                  o primeiro trailer mostra Lucia como uma presidiária e,
+                  posteriormente, fugindo da custódia com seu parceiro.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/free-fire.jpg"
+                src="./assets/img/lancamentos/star-wars-outlaws-key-art-articl.avif"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Free Fire</h5>
+                  <h5 class="populares__card___titulo">Star Wars Outlaws</h5>
                   <time class="populares__card___data" datetime="2017-11-01"
                     >01/11/2017</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Garena Free Fire é um jogo eletrônico mobile de ação-aventura
-                  do gênero battle royale, desenvolvido pela 111dots Studio e
-                  publicado pela Garena. O jogo obteve um beta aberto em
-                  novembro de 2017 e foi lançado oficialmente para Android e iOS
-                  em 4 de dezembro de 2017.
+                  Embarque em missões de alto risco Aceite missões arriscadas e
+                  vantajosas dos sindicatos do crime galácticos. Como uma das
+                  mais procuradas da galáxia, roube bens valiosos, infiltre-se
+                  em locais secretos e engane inimigos.
                 </div>
               </div>
             </div>
             <div class="populares__card">
               <img
                 class="populares__card___imagem"
-                src="./assets/img/mario-kart.jpg"
+                src="./assets/img/lancamentos/south.jpeg"
               />
               <div class="populares__card___corpo">
                 <div class="populares__card___cabecalho">
-                  <h5 class="populares__card___titulo">Super Mario Racing</h5>
+                  <h5 class="populares__card___titulo">South of Midnight</h5>
                   <time class="populares__card___data" datetime
                     >Não definida</time
                   >
                 </div>
                 <div class="populares__card___descricao">
-                  Jogo Super Mario Racing. Escolha seu personagem preferido do
-                  Universo do Super Mario e depois é só acelerar!
+                  South of Midnight é uma nova ação e aventura da Compulsion
+                  Games. Explore os mitos e enfrente criaturas misteriosas do
+                  Extremo Sul neste conto popular moderno enquanto aprende a
+                  tecer um poder antigo para superar obstáculos e enfrentar o
+                  sofrimento que assombra sua cidade natal.
                 </div>
               </div>
             </div>
@@ -644,7 +567,36 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/fontawesome.all.min.js"></script>
-    <footer class="rodape">Todos os direitos reservados &copy;</footer>
+    <footer class="rodape mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 rodape__item">
+            <h5>Sobre nós</h5>
+            <p>
+              A Delta Gaming é uma plataforma dedicada a oferecer os melhores
+              jogos e aplicativos para você se divertir e economizar.
+            </p>
+          </div>
+          <div class="col-md-4 rodape__item">
+            <h5>Contato</h5>
+            <p>Email: contato@deltagaming.com</p>
+            <p>Telefone: (11) 5555-5555</p>
+          </div>
+          <div class="col-md-4 rodape__item">
+            <h5>Siga-nos</h5>
+            <a href="#" class="rodape__link"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+            <a href="#" class="rodape__link"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <a href="#" class="rodape__link"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./assets/js/fontawesome.all.min.js"></script>
   </body>
 </html>
