@@ -1,10 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive;
+  cursor: url("../img/cursor.png"), auto;
+  cursor: url("../img/cursor2.png"), auto;
+}
+
 .app {
   background: #000022;
   display: grid;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Press Start 2P", cursive;
+  cursor: url("../img/cursor.png"), auto;
   grid-template-areas: "cabecalho" "conteudo" "rodape";
   grid-template-columns: auto;
   grid-template-rows: 50px auto auto;
+}
+
+.app button {
+  cursor: url("../img/cursor2.png"), auto;
+}
+
+.app a {
+  cursor: url("../img/cursor2.png"), auto;
 }
 
 .cabecalho {
